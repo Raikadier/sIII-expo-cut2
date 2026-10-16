@@ -283,7 +283,7 @@ body {
 
 /* ---------------------------------------------- grafo */
 
-.stage-graph {
+.graph-layer {
   position: absolute;
   inset: 0;
 }

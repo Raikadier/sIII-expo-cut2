@@ -278,7 +278,7 @@
       svg.appendChild(group);
     });
 
-    var stage = el("div", "stage-graph");
+    var stage = el("div", "graph-layer");
     stage.appendChild(svg);
 
     if (beat.hud) {
