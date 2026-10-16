@@ -50,13 +50,13 @@ window.STORY = {
           "de un grafo dirigido. Nodo = clase. Arista = una clase usa a otra."
       },
       graph: {
-        viewBox: "0 0 100 70",
+        viewBox: "0 0 100 58",
         nodes: [
-          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 12, kind: "actor" },
-          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 40, kind: "class" },
-          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 10, kind: "class" },
-          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 40, kind: "class" },
-          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 62, kind: "class" }
+          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 8, kind: "actor" },
+          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 30, kind: "class" },
+          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 8, kind: "class" },
+          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 30, kind: "class" },
+          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 50, kind: "class" }
         ],
         edges: [
           { id: "e_ana_carla",   from: "ana",   to: "carla",  label: "pide vender" },
@@ -90,13 +90,13 @@ window.STORY = {
         formula: "CBO(Pedido) = 3"
       },
       graph: {
-        viewBox: "0 0 100 70",
+        viewBox: "0 0 100 58",
         nodes: [
-          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 12, kind: "actor" },
-          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 40, kind: "class" },
-          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 10, kind: "class" },
-          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 40, kind: "class" },
-          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 62, kind: "class" }
+          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 8, kind: "actor" },
+          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 30, kind: "class" },
+          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 8, kind: "class" },
+          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 30, kind: "class" },
+          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 50, kind: "class" }
         ],
         edges: [
           { id: "e_ana_carla",   from: "ana",   to: "carla",  label: "pide vender" },
@@ -159,13 +159,13 @@ window.STORY = {
         formula: "RFC(Pedido) = |RS| = 5"
       },
       graph: {
-        viewBox: "0 0 100 70",
+        viewBox: "0 0 100 58",
         nodes: [
-          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 12, kind: "actor" },
-          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 40, kind: "class" },
-          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 10, kind: "class" },
-          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 40, kind: "class" },
-          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 62, kind: "class" }
+          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 8, kind: "actor" },
+          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 30, kind: "class" },
+          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 8, kind: "class" },
+          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 30, kind: "class" },
+          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 50, kind: "class" }
         ],
         edges: [
           { id: "e_ana_carla",   from: "ana",   to: "carla",  label: "pide vender" },
@@ -261,14 +261,14 @@ window.STORY = {
           "no desaparece: se traslada al mostrador, que asume toda la coordinación."
       },
       graph: {
-        viewBox: "0 0 100 70",
+        viewBox: "0 0 100 58",
         nodes: [
-          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 12, kind: "actor" },
-          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 40, kind: "class" },
-          { id: "bruno",  label: "Bruno",  role: "Mostrador",      x: 52, y: 40, kind: "interface" },
-          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 10, kind: "class", muted: true },
-          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 40, kind: "class", muted: true },
-          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 62, kind: "class", muted: true }
+          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 8, kind: "actor" },
+          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 30, kind: "class" },
+          { id: "bruno",  label: "Bruno",  role: "Mostrador",      x: 52, y: 30, kind: "interface" },
+          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 8, kind: "class", muted: true },
+          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 30, kind: "class", muted: true },
+          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 50, kind: "class", muted: true }
         ],
         edges: [
           { id: "e_ana_carla",    from: "ana",   to: "carla",  label: "pide vender" },
@@ -349,14 +349,14 @@ window.STORY = {
           "de clases lo detecta."
       },
       graph: {
-        viewBox: "0 0 100 70",
+        viewBox: "0 0 100 58",
         nodes: [
-          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 12, kind: "actor" },
-          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 40, kind: "class" },
-          { id: "bruno",  label: "Bruno",  role: "Map + String",   x: 52, y: 40, kind: "warning" },
-          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 10, kind: "class", muted: true },
-          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 40, kind: "class", muted: true },
-          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 62, kind: "class", muted: true }
+          { id: "ana",    label: "Ana",    role: "Cliente",        x: 20, y: 8, kind: "actor" },
+          { id: "carla",  label: "Carla",  role: "Pedido",         x: 20, y: 30, kind: "class" },
+          { id: "bruno",  label: "Bruno",  role: "Map + String",   x: 52, y: 30, kind: "warning" },
+          { id: "diego",  label: "Diego",  role: "Inventario",     x: 80, y: 8, kind: "class", muted: true },
+          { id: "elena",  label: "Elena",  role: "Facturación",    x: 80, y: 30, kind: "class", muted: true },
+          { id: "gloria", label: "Gloria", role: "Notificaciones", x: 80, y: 50, kind: "class", muted: true }
         ],
         edges: [
           { id: "e_ana_carla",   from: "ana",   to: "carla",  label: "pide vender" },

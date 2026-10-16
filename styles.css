@@ -303,14 +303,14 @@ body {
 }
 
 .graph-svg .node-label {
-  font-size: 2.85px;
+  font-size: 3.2px;
   font-weight: 650;
   fill: var(--ink);
   letter-spacing: 0.01em;
 }
 
 .graph-svg .node-role {
-  font-size: 1.95px;
+  font-size: 2.2px;
   fill: var(--ink-3);
 }
 
@@ -384,7 +384,7 @@ body {
 }
 
 .graph-svg .edge-label {
-  font-size: 1.6px;
+  font-size: 1.75px;
   fill: var(--ink-3);
   opacity: 0.85;
   paint-order: stroke;
@@ -398,11 +398,11 @@ body {
 
 .hud {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  bottom: 14px;
+  left: 14px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 1px;
   padding: 9px 13px 10px;
   border: 1px solid var(--line);
@@ -839,7 +839,10 @@ body {
 /* ---------------------------------------------- adaptativo */
 
 @media (max-width: 1080px) {
-  .main { grid-template-columns: minmax(0, 1fr); }
+  .main {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
   .side { max-height: 220px; }
   .code-grid { grid-template-columns: 1fr; }
 }

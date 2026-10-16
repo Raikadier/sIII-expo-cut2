@@ -264,13 +264,13 @@
       }));
 
       var name = svgEl("text", {
-        "class": "node-label", "text-anchor": "middle", y: -0.2
+        "class": "node-label", "text-anchor": "middle", y: -0.9
       });
       name.textContent = node.label;
       group.appendChild(name);
 
       var role = svgEl("text", {
-        "class": "node-role", "text-anchor": "middle", y: 3.2
+        "class": "node-role", "text-anchor": "middle", y: 2.8
       });
       role.textContent = node.role;
       group.appendChild(role);
