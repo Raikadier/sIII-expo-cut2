@@ -8,8 +8,8 @@ window.STORY = {
   meta: {
     title: "La cadena de llamadas",
     subtitle: "Acoplamiento entre objetos (CBO) y respuesta de una clase (RFC)",
-    course: "Ingeniería de Software — [ajusta el nombre de la materia]",
-    author: "[Tu nombre] · Exposición corte 2",
+    course: "Ingeniería de Software III",
+    author: "David Barceló · Exposición corte 2",
     hint: "Usa → / espacio para avanzar · ← para volver · S notas · R ficha"
   },
 

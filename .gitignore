@@ -11,3 +11,4 @@ yarn-debug.log*
 yarn-error.log*
 coverage/
 *.local
+.vercel/
