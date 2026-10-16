@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La cadena de llamadas · CBO y RFC</title>
+<meta name="description" content="Historia interactiva para exponer las metricas CBO (acoplamiento entre objetos) y RFC (respuesta de una clase) de la suite de Chidamber y Kemerer.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <span class="brand-dot" aria-hidden="true"></span>
+    <span class="brand-name">La cadena de llamadas</span>
+  </div>
+
+  <div class="crumbs">
+    <span id="chapter" class="crumb-chapter"></span>
+    <span id="title" class="crumb-title"></span>
+  </div>
+
+  <nav class="tools" aria-label="Herramientas de presentacion">
+    <button id="btn-notes" class="tool" type="button" aria-pressed="false" title="Mostrar notas del orador (S)">
+      Notas<span class="kbd">S</span>
+    </button>
+    <button id="btn-ref" class="tool" type="button" aria-pressed="false" title="Abrir ficha de referencia (R)">
+      Ficha<span class="kbd">R</span>
+    </button>
+    <button id="btn-full" class="tool" type="button" title="Pantalla completa (F)">
+      Pantalla<span class="kbd">F</span>
+    </button>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="left">
+    <div id="stage" class="stage" aria-live="polite"></div>
+    <p id="narration" class="narration"></p>
+  </section>
+
+  <aside id="concept" class="side" aria-label="Ficha del concepto"></aside>
+</main>
+
+<footer class="bar">
+  <button id="btn-prev" class="nav" type="button" aria-label="Anterior">&lsaquo;</button>
+
+  <div class="progress" role="progressbar" aria-label="Avance de la presentacion">
+    <div id="progress-fill" class="progress-fill"></div>
+  </div>
+
+  <span id="progress-text" class="progress-text"></span>
+
+  <button id="btn-next" class="nav nav-primary" type="button" aria-label="Siguiente">&rsaquo;</button>
+</footer>
+
+<section id="notes" class="notes" aria-label="Notas del orador">
+  <div class="notes-head">
+    <span>Notas del orador</span>
+    <button id="notes-close" class="close" type="button" aria-label="Cerrar notas">&times;</button>
+  </div>
+  <p id="notes-text" class="notes-text"></p>
+</section>
+
+<section id="ref" class="ref" aria-label="Ficha de referencia">
+  <div class="ref-head">
+    <span>Ficha de referencia &mdash; CBO y RFC</span>
+    <button id="ref-close" class="close" type="button" aria-label="Cerrar ficha">&times;</button>
+  </div>
+
+  <div class="ref-grid">
+    <article>
+      <h3>CBO <small>Coupling Between Objects</small></h3>
+      <p>Cuenta <strong>clases</strong> distintas a las que esta clase esta acoplada.</p>
+      <ul>
+        <li>Unidad: <strong>clases</strong>.</li>
+        <li>Direccion: <strong>eferente</strong>. Cuenta a quien llamo yo; quien me llama no suma.</li>
+        <li>La herencia se excluye normalmente (para eso esta DIT). Declara tu regla.</li>
+        <li>Valor alto: un cambio se propaga en cascada.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>RFC <small>Response For a Class</small></h3>
+      <p><code>RFC = |RS|</code>, tamano del <strong>conjunto de respuesta</strong>.</p>
+      <ul>
+        <li>Metodos ejecutables cuando un objeto recibe un mensaje.</li>
+        <li>CK (1994): <strong>clausura transitiva</strong>. Muchas herramientas: un solo nivel.</li>
+        <li>Cuenta <strong>metodos</strong>, no clases: una clase usada con 2 metodos suma 2.</li>
+        <li>Valor alto: dificil de probar y de depurar.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Errores de conteo frecuentes</h3>
+      <ul>
+        <li>Contar en CBO a quien te llama (esa arista pertenece al otro).</li>
+        <li>Contar clases en RFC en lugar de metodos.</li>
+        <li>Reportar RFC sin declarar la convencion de conteo.</li>
+        <li>Suponer que CBO ve el acoplamiento por <code>String</code>, JSON o esquema de base de datos: no lo ve.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Vecinas en la suite</h3>
+      <ul>
+        <li><strong>WMC</strong> complejidad ponderada de metodos</li>
+        <li><strong>DIT</strong> profundidad del arbol de herencia</li>
+        <li><strong>NOC</strong> numero de subclases inmediatas</li>
+        <li><strong>LCOM</strong> falta de cohesion entre metodos</li>
+        <li>Tradicionales: LOC, Halstead, McCabe, Fan-in/Fan-out</li>
+      </ul>
+      <p class="ref-src">Chidamber &amp; Kemerer (1994), <em>IEEE TSE</em> 20(6): 476&ndash;493.</p>
+    </article>
+  </div>
+</section>
+
+<script src="scenes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
