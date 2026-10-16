@@ -36,16 +36,16 @@ También funciona con un *clicker* de presentaciones, porque responde a `PageDow
 `PageUp` y a las flechas. Los botones ‹ › de la barra inferior hacen lo mismo con
 ratón o pantalla táctil. La navegación respeta `prefers-reduced-motion`.
 
-## Antes de exponer: rellena los huecos
+## Datos de la portada
 
-En `scenes.js`, dentro de `meta`:
+Ya están puestos en `scenes.js`, dentro de `meta`:
 
 ```js
-course: "Ingeniería de Software — [ajusta el nombre de la materia]",
-author: "[Tu nombre] · Exposición corte 2",
+course: "Ingeniería de Software III",
+author: "David Barceló · Exposición corte 2",
 ```
 
-No queda ningún otro marcador pendiente: busca `[` en `scenes.js` y no debe salir nada.
+Para cambiarlos, edita esos dos valores. No hay marcadores `[ ]` pendientes en el guion.
 
 ## Cómo editar el guion
 
@@ -103,9 +103,3 @@ charla está ahí:
   o 6 según la convención. Por eso la escena 7 compara las dos.
 - **CBO** se cuenta **solo en saliente** (eferente) y sin herencia — la herencia es
   **DIT**. Contar a quien te llama es el error más común al contar CBO a mano.
-
-Y el material de clase del que salió el tema arrastra tres imprecisiones que aquí **no**
-se repiten: no existe la sigla "RDCOF" (es **ROCOF**, *Rate of Occurrence of Failures*);
-la terna clásica es LOC + **Halstead** (1977) + McCabe (1976), y Halstead faltaba;
-y **Fan-in / Fan-out** es análisis estructural sobre módulos, no una métrica del código
-fuente como LOC o McCabe.
